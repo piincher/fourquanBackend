@@ -6,7 +6,7 @@ import {
 	getSingle,
 	updateUniversity,
 	deleteUniversity
-} from '../controllers/university';
+} from '../controllers/university.js';
 const router = express.Router();
 
 router.post('/register', register);

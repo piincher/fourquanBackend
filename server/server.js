@@ -1,15 +1,15 @@
 import express from 'express';
-import cors from 'cors';
-import { readdirSync } from 'fs';
 import colors from 'colors';
-import connectDB from './config/db';
+import path from 'path';
+import connectDB from './config/db.js';
 import dotenv from 'dotenv';
-import universitiesRoute from './routes/university';
+import universitiesRoute from './routes/university.js';
 
 dotenv.config();
 connectDB();
 const app = express();
 app.use(express.json());
+const __dirname = path.resolve();
 
 //readdirSync('./').map((r) => app.use('/api', require(`./routes/${r}`)));
 app.use('/api', universitiesRoute);

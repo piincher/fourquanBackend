@@ -1,4 +1,4 @@
-import University from '../models/university';
+import University from '../models/university.js';
 const register = async (req, res) => {
 	const { name, program, length, description, tuition } = req.body;
 	if (!name || !program || !length || !description || !tuition) {
