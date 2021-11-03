@@ -1,0 +1,28 @@
+{
+	"name": "server",
+	"version": "1.0.0",
+
+	"description": "",
+	"main": "index.js",
+	"scripts": {
+		"start": "nodemon -r esm server/server.js ",
+		"heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --prefix client && npm run build --prefix client"
+	},
+	"keywords": [],
+	"author": "",
+	"license": "ISC",
+	"dependencies": {
+		"colors": "^1.4.0",
+		"cors": "^2.8.5",
+		"dotenv": "^10.0.0",
+		"esm": "^3.2.25",
+		"express": "^4.17.1",
+		"mongoose": "^6.0.12"
+	},
+	"engines": {
+		"node": "14.17.4"
+	},
+	"devDependencies": {
+		"nodemon": "^2.0.14"
+	}
+}
