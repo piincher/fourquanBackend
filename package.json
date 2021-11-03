@@ -4,8 +4,10 @@
 
 	"description": "",
 	"main": "index.js",
+
 	"scripts": {
-		"start": "nodemon -r esm server/server.js ",
+		"start": "node server/server.js",
+		"server": "nodemon -r esm server/server.js",
 		"heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --prefix client && npm run build --prefix client"
 	},
 	"keywords": [],
