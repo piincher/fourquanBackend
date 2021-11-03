@@ -7,7 +7,7 @@ import { toast } from 'react-toastify';
 const University = ({ university, history }) => {
 	const handleDelete = async () => {
 		try {
-			const { data } = await axios.delete(`http://localhost:8000/api/university/${university._id}`);
+			const { data } = await axios.delete(`/api/university/${university._id}`);
 
 			toast.error(data.success);
 		} catch (error) {}

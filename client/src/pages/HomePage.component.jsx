@@ -9,7 +9,7 @@ export const HomePage = ({ history }) => {
 
 	useEffect(() => {
 		const fetchAll = async () => {
-			const { data } = await axios.get('http://localhost:8000/api');
+			const { data } = await axios.get('/api');
 			setUniversities(data);
 		};
 		fetchAll();

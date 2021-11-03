@@ -14,7 +14,7 @@ const EditPage = ({ match, history }) => {
 	useEffect(
 		() => {
 			const fetch = async () => {
-				const { data } = await axios.get(`http://localhost:8000/api/edit/${id}`);
+				const { data } = await axios.get(`/api/edit/${id}`);
 				setName(data.name);
 				setProgam(data.program);
 				setLength(data.length);

@@ -14,7 +14,7 @@ const CreateUniversityPage = ({ history }) => {
 	const handleSubmit = async (event) => {
 		try {
 			event.preventDefault();
-			const { data } = await axios.post('http://localhost:8000/api/register', {
+			const { data } = await axios.post('/api/register', {
 				name,
 				program,
 				length,
