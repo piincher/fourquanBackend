@@ -9,7 +9,7 @@ const Search = () => {
 	const [ result, setResult ] = useState([]);
 	const searchUser = async (e) => {
 		e.preventDefault();
-		const { data } = await axios.get(`http://localhost:8000/api/search-user/${query}`);
+		const { data } = await axios.get(`/api/search-user/${query}`);
 		setResult(data);
 	};
 	return (
