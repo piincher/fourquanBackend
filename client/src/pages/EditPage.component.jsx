@@ -28,7 +28,7 @@ const EditPage = ({ match, history }) => {
 
 	const handleSubmit = async (e) => {
 		e.preventDefault();
-		const { data } = await axios.put(`http://localhost:8000/api/edit-university/${id}`, {
+		const { data } = await axios.put(`/api/edit-university/${id}`, {
 			name,
 			program,
 			length,
